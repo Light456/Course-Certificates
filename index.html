@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grant Yahan Zhong — Course Certificates</title>
+<meta name="description" content="Online course certificates earned by Grant Yahan Zhong.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ece6d8;
+    --paper: #fbf8f0;
+    --ink: #2a2118;
+    --muted: #7a6a55;
+    --gold: #a8822f;
+    --gold-soft: rgba(168, 130, 47, .35);
+    --navy: #1e2f4d;
+    --hover: #f3ecdb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12110e;
+      --paper: #1c1a15;
+      --ink: #ece4d2;
+      --muted: #a89a82;
+      --gold: #d2ac5a;
+      --gold-soft: rgba(210, 172, 90, .3);
+      --navy: #a9bde0;
+      --hover: #26231c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #12110e;
+    --paper: #1c1a15;
+    --ink: #ece4d2;
+    --muted: #a89a82;
+    --gold: #d2ac5a;
+    --gold-soft: rgba(210, 172, 90, .3);
+    --navy: #a9bde0;
+    --hover: #26231c;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; color: var(--ink); background: var(--bg);
+    font: 19px/1.5 "EB Garamond", Garamond, Georgia, serif;
+  }
+
+  /* Diploma frame: outer gold rule, inner double rule, corner ornaments */
+  .diploma {
+    position: relative; max-width: 860px; margin: 48px auto; background: var(--paper);
+    padding: 14px; border: 2px solid var(--gold);
+    box-shadow: 0 2px 4px rgba(0,0,0,.05), 0 18px 50px rgba(60,40,10,.12);
+  }
+  .inner {
+    border: 1px solid var(--gold); outline: 1px solid var(--gold-soft); outline-offset: -7px;
+    padding: 64px 72px 52px; position: relative;
+  }
+  .corner { position: absolute; width: 22px; height: 22px; color: var(--gold); }
+  .corner svg { display: block; width: 100%; height: 100%; }
+  .tl { top: 12px; left: 12px; } .tr { top: 12px; right: 12px; transform: scaleX(-1); }
+  .bl { bottom: 12px; left: 12px; transform: scaleY(-1); } .br { bottom: 12px; right: 12px; transform: scale(-1); }
+
+  header { text-align: center; }
+  h1 {
+    font-family: "Cinzel", "Trajan Pro", serif; font-weight: 700; color: var(--navy);
+    font-size: clamp(28px, 5vw, 42px); letter-spacing: .08em; line-height: 1.15; margin: 0;
+  }
+  .conferred { font-style: italic; color: var(--muted); margin: 14px 0 2px; font-size: 18px; }
+  .name {
+    font-family: "Cinzel", serif; font-weight: 600; font-size: clamp(22px, 3.4vw, 28px);
+    letter-spacing: .12em; margin: 0;
+  }
+  .flourish { display: flex; align-items: center; gap: 14px; justify-content: center; margin: 30px auto 0; max-width: 360px; color: var(--gold); }
+  .flourish::before, .flourish::after { content: ""; flex: 1; height: 1px; background: var(--gold); }
+  .flourish span { font-size: 14px; }
+
+  section { margin-top: 48px; }
+  h2 {
+    font-family: "Cinzel", serif; font-weight: 600; color: var(--navy);
+    text-align: center; font-size: 18px; letter-spacing: .22em; margin: 0 0 6px;
+  }
+  .count { text-align: center; font-style: italic; color: var(--muted); font-size: 16px; margin: 0 0 16px; }
+
+  ol { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--gold-soft); }
+  li { border-bottom: 1px solid var(--gold-soft); }
+  li a {
+    display: flex; align-items: baseline; gap: 16px; padding: 13px 10px;
+    color: var(--ink); text-decoration: none;
+  }
+  li a:hover { background: var(--hover); }
+  li a:hover .t { color: var(--navy); }
+  .n { font-family: "Cinzel", serif; font-size: 14px; color: var(--gold); min-width: 40px; }
+  .t { flex: 1; font-size: 20px; font-weight: 500; }
+  .v { font-style: italic; font-size: 16px; color: var(--muted); white-space: nowrap; }
+  li a:hover .v { color: var(--gold); }
+
+  footer { margin-top: 52px; text-align: center; font-style: italic; color: var(--muted); font-size: 15px; }
+
+  @media (max-width: 700px) {
+    .diploma { margin: 16px; padding: 8px; }
+    .inner { padding: 44px 16px 36px; }
+    .corner { width: 16px; height: 16px; }
+    li a { padding: 12px 4px; gap: 10px; }
+    .t { font-size: 18px; }
+    .v { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="diploma">
+  <div class="inner">
+    <span class="corner tl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 22V2h20"/><path d="M6 18V6h12"/><circle cx="2" cy="2" r="1.6" fill="currentColor"/></svg></span>
+    <span class="corner tr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 22V2h20"/><path d="M6 18V6h12"/><circle cx="2" cy="2" r="1.6" fill="currentColor"/></svg></span>
+    <span class="corner bl"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 22V2h20"/><path d="M6 18V6h12"/><circle cx="2" cy="2" r="1.6" fill="currentColor"/></svg></span>
+    <span class="corner br"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 22V2h20"/><path d="M6 18V6h12"/><circle cx="2" cy="2" r="1.6" fill="currentColor"/></svg></span>
+
+    <header>
+      <h1>Course Certificates</h1>
+      <p class="conferred">awarded to</p>
+      <p class="name">Grant Yahan Zhong</p>
+      <div class="flourish"><span>✦</span></div>
+    </header>
+
+    <main>
+      <section>
+        <h2>Sustainability</h2>
+        <p class="count">Nine certificates</p>
+        <ol>
+          <li><a href="https://drive.google.com/file/d/16GPl-ggHA3l7biocfv2gyFjHpYX7mryT/view" target="_blank" rel="noopener"><span class="n">I</span><span class="t">Discover Best Practice Farming for a Sustainable 2050</span><span class="v">view ↗</span></a></li>
+          <li><a href="https://drive.google.com/file/d/1LqTKf7EqprYj2djtw7KeXEfZPiFvkgEm/view" target="_blank" rel="noopener"><span class="n">II</span><span class="t">Energy and Environment</span><span class="v">view ↗</span></a></li>
+          <li><a href="https://drive.google.com/file/d/1174MrRcnJ7k82OUHeN7zKSZBLL3wIB9U/view" target="_blank" rel="noopener"><span class="n">III</span><span class="t">Environmental Health: the Foundation of Global Public Health</span><span class="v">view ↗</span></a></li>
+          <li><a href="https://drive.google.com/file/d/161XL1FTMjTz9MTPDipBR9ewQ65yixh3G/view" target="_blank" rel="noopener"><span class="n">IV</span><span class="t">Environmental Science</span><span class="v">view ↗</span></a></li>
+          <li><a href="https://drive.google.com/file/d/15ebTmQbL6ipfX4yowTeVuRqAXDssIBKR/view" target="_blank" rel="noopener"><span class="n">V</span><span class="t">Introduction to Food and Our Environment</span><span class="v">view ↗</span></a></li>
+          <li><a href="https://drive.google.com/file/d/1msPsmkpCBT2wk8srOTcwcwbWRxKDdgBi/view" target="_blank" rel="noopener"><span class="n">VI</span><span class="t">Population, Food, and Soil</span><span class="v">view ↗</span></a></li>
+          <li><a href="https://drive.google.com/file/d/11CbyFR8Fpb7Z1exG9i15VDiVD6j57ql-/view" target="_blank" rel="noopener"><span class="n">VII</span><span class="t">Supply Chain of Agriculture</span><span class="v">view ↗</span></a></li>
+          <li><a href="https://drive.google.com/file/d/1czuR964ylW_M3_gMWuBJynZ3NsHVskqn/view" target="_blank" rel="noopener"><span class="n">VIII</span><span class="t">Sustainable Agricultural Land Management</span><span class="v">view ↗</span></a></li>
+          <li><a href="https://drive.google.com/file/d/1i5lYs-o40nVbmlHbUVq8BB5MKA4fFM9H/view" target="_blank" rel="noopener"><span class="n">IX</span><span class="t">UN Carbon Taxation e-Course</span><span class="v">view ↗</span></a></li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Agricultural Economics</h2>
+        <p class="count">Five certificates</p>
+        <ol>
+          <li><a href="https://drive.google.com/file/d/1Imv6tsMBFyLAhosibX3gLtUeAXVOk4_W/view" target="_blank" rel="noopener"><span class="n">I</span><span class="t">Basics of Entrepreneurship: Thinking and Doing</span><span class="v">view ↗</span></a></li>
+          <li><a href="https://drive.google.com/file/d/18Svwbja9wZKvP-OXnFkUF8Er8YUXFV4B/view" target="_blank" rel="noopener"><span class="n">II</span><span class="t">Business Analysis &amp; Process Management</span><span class="v">view ↗</span></a></li>
+          <li><a href="https://drive.google.com/file/d/1xlnqZzU2SRraAuWoJt4ezMHH5vzfsUt2/view" target="_blank" rel="noopener"><span class="n">III</span><span class="t">Entrepreneurship 1: Developing the Opportunity</span><span class="v">view ↗</span></a></li>
+          <li><a href="https://drive.google.com/file/d/12mksN3i320NStsYb0J6BqXCVKeb3m2Y5/view" target="_blank" rel="noopener"><span class="n">IV</span><span class="t">Foundations of Business Strategy</span><span class="v">view ↗</span></a></li>
+          <li><a href="https://drive.google.com/file/d/1vD1TvAKQfxSmDL8yAEHdP0urwVAFR9dX/view" target="_blank" rel="noopener"><span class="n">V</span><span class="t">Think Like a Leader</span><span class="v">view ↗</span></a></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>Fourteen certificates of completion</footer>
+  </div>
+</div>
+
+</body>
+</html>
